@@ -1,0 +1,211 @@
+<template>
+  <f7-page name="home">
+    <!-- Top Navbar -->
+    <f7-navbar :sliding="false" large>
+      <f7-nav-left>
+        <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="left"></f7-link>
+      </f7-nav-left>
+      <f7-nav-title sliding>SanteChile</f7-nav-title>
+      <f7-nav-right>
+        <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="right"></f7-link>
+      </f7-nav-right>
+      <f7-nav-title-large sliding>SanteChile</f7-nav-title-large>
+    </f7-navbar>
+    <!-- Toolbar-->
+    <f7-toolbar bottom>
+      <f7-link>Left Link</f7-link>
+      <f7-link>Right Link</f7-link>
+    </f7-toolbar>
+    <!-- Page content-->
+    <f7-block strong>
+      <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
+
+      <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
+
+      <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
+    </f7-block>
+
+    <f7-block-title>Navigation</f7-block-title>
+    <f7-list>
+      <f7-list-item link="/about/" title="About"></f7-list-item>
+      <f7-list-item link="/form/" title="Form"></f7-list-item>
+    </f7-list>
+
+    <f7-block-title>Modals</f7-block-title>
+    <f7-block strong>
+      <f7-row>
+        <f7-col width="50">
+          <f7-button fill raised popup-open="#my-popup">Popup</f7-button>
+        </f7-col>
+        <f7-col width="50">
+          <f7-button fill raised login-screen-open="#my-login-screen">Login Screen</f7-button>
+        </f7-col>
+      </f7-row>
+    </f7-block>
+
+    <f7-block-title>Panels</f7-block-title>
+    <f7-block strong>
+      <f7-row>
+        <f7-col width="50">
+          <f7-button fill raised panel-open="left">Left Panel</f7-button>
+        </f7-col>
+        <f7-col width="50">
+          <f7-button fill raised panel-open="right">Right Panel</f7-button>
+        </f7-col>
+      </f7-row>
+    </f7-block>
+
+    <f7-list>
+      <f7-list-item
+        title="Dynamic (Component) Route"
+        link="/dynamic-route/blog/45/post/125/?foo=bar#about"
+      ></f7-list-item>
+      <f7-list-item
+        title="Default Route (404)"
+        link="/load-something-that-doesnt-exist/"
+      ></f7-list-item>
+      <f7-list-item
+        title="Request Data & Load"
+        link="/request-and-load/user/123456/"
+      ></f7-list-item>
+    </f7-list>
+
+  </f7-page>
+</template>
+
+
+<template>
+  <f7-page name="home">
+    <!-- Top Navbar -->
+    <f7-navbar :sliding="false" large>
+      <f7-nav-left>
+        <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="left"></f7-link>
+      </f7-nav-left>
+      <f7-nav-title sliding>Sante Chile</f7-nav-title>
+      <f7-nav-right>
+        <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="right"></f7-link>
+      </f7-nav-right>
+      <f7-nav-title-large sliding><p class="text-align-center">Sante Chile</p></f7-nav-title-large>
+    </f7-navbar>
+  
+    <!-- Page content-->
+   
+     <div class="page-content">
+       <p class="text-align-center"> <img data-src="https://cdn.pixabay.com/photo/2017/01/31/22/07/african-2027619_960_720.png" class="lazy"></p>
+        
+     </div>
+
+    <f7-block-title>Modals</f7-block-title>
+    <f7-block strong>
+      <f7-row>
+        <f7-col width="50">
+          <f7-button fill raised popup-open="#my-popup"> ¡Byenveni! </f7-button>
+        </f7-col>
+        <f7-col width="50">
+          <f7-button fill raised login-screen-open="#my-login-screen"> Ekran Login</f7-button>
+        </f7-col>
+      </f7-row>
+    </f7-block>
+
+    <f7-block-title>Panels</f7-block-title>
+    <f7-block strong>
+      <f7-row>
+        <f7-col width="50">
+          <f7-button fill raised panel-open="left">Left Panel</f7-button>
+        </f7-col>
+        <f7-col width="50">
+          <f7-button fill raised panel-open="right">Right Panel</f7-button>
+        </f7-col>
+      </f7-row>
+    </f7-block>
+
+    <f7-list>
+      <f7-list-item
+        title="Dynamic (Component) Route"
+        link="/dynamic-route/blog/45/post/125/?foo=bar#about"
+      ></f7-list-item>
+      <f7-list-item
+        title="Default Route (404)"
+        link="/load-something-that-doesnt-exist/"
+      ></f7-list-item>
+      <f7-list-item
+        title="Request Data & Load"
+        link="/request-and-load/user/123456/"
+      ></f7-list-item>
+    </f7-list>
+
+  </f7-page>
+</template>
+
+-----------------------------------
+<!-- Static Toolbar -->
+    <div class="toolbar tabbar tabbar-labels toolbar-bottom">
+    
+    <div class="toolbar-inner">
+      <div class="col button open-confirm">
+      <a  class="tab-link tab-link-active">
+        <!-- Different icons for iOS and MD themes -->      
+        <f7-icon f7="gear_fill"></f7-icon>     
+        <!-- Label text -->
+        <span class="tabbar-label" >Configuración</span>
+       
+      </a>
+      </div>
+      <a fill raised popup-open="#my-popup2" class="tab-link tab-link-active">
+       <!-- Different icons for iOS and MD themes --> 
+        <f7-icon fill raised popup-open="#my-popup2" f7="help_round_fill"></f7-icon>      
+        <!-- Label text -->
+        <span class="tabbar-label"  >Ayuda</span>
+      </a>
+     
+      <a href="#tab-3" class="tab-link  tab-link-active">
+         <!-- Different icons for iOS and MD themes --> 
+        <f7-icon f7="sort_up_round_fill"></f7-icon>      
+        <!-- Label text -->
+        <span class="tabbar-label">Cooperar</span>
+        
+      </a>
+    </div>
+  </div>
+    </div>
+    --------------------------------
+     <div class="page-content">
+      <div class="block block-strong">
+        <p class="row">
+          <button class="col button open-confirm">Agregar</button>
+        </p>     
+      </div>
+    </div>
+    --------------
+    contenidode aagregar
+     <h1 class="text-align-center">Agregar pregunta</h1>
+<f7-list form>
+      <f7-list-input
+        label="escribe la pregunta que deseas agregar"
+        type="text"
+        placeholder="Ppregunta que deseas agregar"
+        :value="username"
+        @input="username = $event.target.value"
+      ></f7-list-input>
+      <f7-list-input
+        label="Ingresa al tipo de consulta al cual pertenece (consulta médica/exámenes)"
+        type="text"
+        placeholder="Consulta médica/Examen"
+        :value="password"
+        @input="password = $event.target.value"
+      ></f7-list-input>
+    </f7-list>
+     <div class="block block-strong">
+        <p class="row">
+          <button class="col button open-confirm">confirm</button>
+        </p>     
+      </div>
+   
+
+  </div>
+
+ <f7-block strong>
+      <f7-row tag="p">
+        <f7-button raised class="col" @click="openConfirm" >Agregar</f7-button>
+      </f7-row>  
+    </f7-block>   

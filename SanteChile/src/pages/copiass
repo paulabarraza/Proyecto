@@ -1,0 +1,17 @@
+
+    <!-- Page content-->
+   
+<div class="page-content">
+      <p class="text-align-center"> <img data-src="https://i.ibb.co/4tsSV64/Logo-Santechile.png" width="200" height="200" class="lazy"></p>
+     </div> <h1 class="text-align-center">Menú</h1>
+      <f7-block>
+      <f7-row>
+        <f7-col width="100"><f7-button  fill raised href='/enfermedades/'  class="text-color-black" > ¡Consulta médica! </f7-button></f7-col>   
+      </f7-row>
+    </f7-block>
+<f7-block>   </f7-block>
+    <f7-block>
+      <f7-row>
+        <f7-col width="100"><f7-button  fill raised href='/examenes/'  class="text-color-black"> ¡Exámenes! </f7-button></f7-col>   
+      </f7-row>
+    </f7-block>
